@@ -1,14 +1,24 @@
-# WordPress specific ignores
+# WordPress core files
+/wp-admin/
+/wp-includes/
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/uploads/
+/wp-content/debug.log
+
+# WP config files
 wp-config.php
-wp-content/uploads
-wp-content/upgrade
-wp-content/cache
-wp-content/debug.log
+wp-config-sample.php
+
+# Log files and databases
+*.log
+*.sql
+*.sqlite
 
 # OS generated files #
 .DS_Store
 .DS_Store?
-._* 
+._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
@@ -19,5 +29,9 @@ Thumbs.db
 *.sublime-project
 *.sublime-workspace
 
-# Other
+# Node modules
 node_modules/
+
+# Composer vendor
+vendor/
+
